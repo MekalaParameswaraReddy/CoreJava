@@ -1,0 +1,47 @@
+http://www.sitesbay.com/java/java-interface
+ 
+Interface is similar to class which is collection of public static final variables (constants) and abstract methods.
+ 
+Why we use Interface ?
+	It is used to achieve fully abstraction.
+	By using Interface, you can achieve multiple inheritance in java.
+	It can be used to achieve loose coupling.
+ 
+properties of Interface ?
+	It is implicitly abstract. So we no need to use the abstract keyword when declaring an interface.
+	Each method in an interface is also implicitly abstract, so the abstract keyword is not needed.
+	Methods in an interface are implicitly public.
+	All the data members of interface are implicitly public static final.
+ 
+How interface is similar to class ?
+	Whenever we compile any Interface program it generate .class file. That means the bytecode of an interface appears in a .class file.
+ 
+How interface is different from class ?
+	You can not instantiate an interface.
+	It does not contain any constructors.
+	All methods in interface are abstract.
+	Interface can not contain instance fields. Interface only contains public static final variables.
+	Interface is can not extended by a class; it is implemented by a class.
+	Interface can extend multiple interfaces. It means interface support multiple inheritance
+ 
+ 
+When we use abstract and when Interface? 
+	If we do not know about any things about implementation just we have requirement specification then we should be go for Interface
+	If we are talking about implementation but not completely (partially implemented) then we should be go for abstract
+	 
+Rules for implementation interface ?
+	A class can implement more than one interface at a time.
+	A class can extend only one class, but implement many interfaces.
+	An interface can extend another interface, similarly to the way that a class can extend another class.
+ 
+Relationship between class and Interface?
+	Class --> (extends) --> class
+	Class --> (implements) --> interface
+	interface --> (extends) --> interface
+ 
+Why interface have no constructor ?
+	because constructor is like a method and it is concrete method and interface does not have concrete method it have only abstract methods that's why interface have no constructor.
+	Constructor is use to assign some default value to member variables, in interface all the member variables are constants.
+	
+Super class of all classes is java.lang.Object class, does this applies to Interface as well? What is super class of all Interface in Java?
+	java.lang.Object class is the super class of all Java classes. All non-primitive types (including arrays) inherit either directly or indirectly from Object class.

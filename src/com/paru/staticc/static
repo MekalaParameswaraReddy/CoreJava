@@ -1,0 +1,11 @@
+In java language static keyword can be used for following ?
+variable (also known as class variable)
+method (also known as class method)
+block
+nested class
+ 
+Advantage of static variable?
+Using static variable we make our program memory efficient (i.e it saves memory).
+ 
+Difference between non-static and static variable?
+how to find how many object are created for a class?

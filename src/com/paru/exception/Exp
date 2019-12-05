@@ -1,0 +1,16 @@
+Checked Exception Classes
+========================
+       FileNotFoundException
+       ClassNotFoundException
+       IOException
+       InterruptedException
+      
+Un-Checked Exception Classes
+============================
+       ArithmeticException
+       ArrayIndexOutOfBoundsException
+       StringIndexOutOfBoundsException
+       NumberFormateException
+       NullPointerException
+       NoSuchMethodException
+       NoSuchFieldException
