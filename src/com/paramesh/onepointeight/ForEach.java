@@ -28,7 +28,8 @@ public class ForEach {
 		list.add("three");
 		list.add("four");
 		list.add("five");
-
+		list.add("six");
+		
 		map.put("A.P", "Amaravathi");
 		map.put("T.G", "Hyd");
 		map.put("Karnataka", "Bengalur");
