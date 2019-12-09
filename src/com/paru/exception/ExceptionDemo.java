@@ -117,8 +117,7 @@ public class ExceptionDemo {
 			throw new MajorOrMinorExp("Number shold not be negative", ex);
 		}
 	}
-	
-	
+
 	/**
 	 * while catching the exception, handle the subclass exception, followed by
 	 * super class exception.
@@ -136,5 +135,34 @@ public class ExceptionDemo {
 		}*/
 		System.out.println("normal flow of the program's Instructions");
 	}
+	
+	/**
+	 * irrespective of exception in chain() method, sop stmt 1 and 2 are will execute.
+	 */
+	public void exceptionChaniningTest() {
+		try {
+			System.out.println("==== 1 ======");
+			chain(10);
+			//if (10 / 0 == 0) { }
+			System.out.println("==== 2 ======");
+		} catch (Exception e) {
+			System.out.println("exceptionChaniningTest() method catch blcok");
+			e.printStackTrace();
+		} finally {
+			System.out.println("exceptionChaniningTest() method finally block");
+		}
+	}
 
+	public void chain(int a) {
+		try {
+			if (a / 0 == 0) {
+				System.out.println("no exceptoin");
+			}
+		} catch (Exception e) {
+			System.out.println("chain() method catch block");
+			e.printStackTrace();
+		} finally {
+			System.out.println("chain() method finally block");
+		}
+	}
 }

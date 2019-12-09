@@ -14,6 +14,7 @@ public class ExceptionDemoTest {
 		ExceptionDemo demo = new ExceptionDemo();
 		/*demo.unChecketExptest(0);
 		demo.checkedExpTest(0);*/
-		demo.personTest(10);
+		//demo.personTest(10);
+		demo.exceptionChaniningTest();
 	}
 }
