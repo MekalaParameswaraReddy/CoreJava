@@ -91,18 +91,35 @@ public class WordCount {
 			System.out.println("both are not equal");
 		}
 	}
+	
+	/**
+	 * I/P ==> 134, 3 : O/P 129
+	 * @param number
+	 * @param digit
+	 */
+	public void lessThanGivenNumberShouldNotContainPassedNumber(int number, int digit) {
+		String numDigit = new String(digit+"");
+		for(int i = number; i>=0 ; --i){
+			String num = new String(i+"");
+			if(!num.contains(numDigit)) {
+				System.out.println(num);
+				break;
+			}
+		}
+	}
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		WordCount wordCount = new WordCount();
-		String sentence = "java is a programing language. java is simple. java is used for many apllications.";
+		/*String sentence = "java is a programing language. java is simple. java is used for many apllications.";
 		String word = "is";
 		int count = wordCount.wordCountInSentence(sentence, word);
 		System.out.println("The word " + word + " is presnt " + count + " times");
 		wordCount.getWordCount();
 		wordCount.getWordCountForPerformance();
-		wordCount.equalTest();	
+		wordCount.equalTest();	*/
+		wordCount.lessThanGivenNumberShouldNotContainPassedNumber(134, 3);
 	}
 }
