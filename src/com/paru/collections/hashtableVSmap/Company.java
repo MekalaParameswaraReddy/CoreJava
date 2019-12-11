@@ -1,6 +1,7 @@
 package com.paru.collections.hashtableVSmap;
 
 public class Company {
+	
 	private String name;
 	private String sector;
 	private String quoteIn;
