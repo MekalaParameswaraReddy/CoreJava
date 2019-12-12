@@ -45,11 +45,12 @@ public class ExceptionDemo {
 	 * finally block always will execute, even though if you put return
 	 * statement in catch.
 	 * 
-	 * Following unChecketExptest() is an example for unchecked exception. if
+	 * Following unCheckedExptest() is an example for unchecked exception. if
 	 * any problem in arithmetic operation like divide by zero
 	 * ArithmeticException will occurs.
 	 */
-	public void unChecketExptest(int num) {
+	public void unCheckedExptest(int num) {
+		System.out.println("unCheckedExptest(-) method @start .... ");
 		try {
 			int val = 10 / num;
 			System.out.println(val);
@@ -69,11 +70,12 @@ public class ExceptionDemo {
 			System.out.println("executed irrespective of Exception.");
 		}
 		System.out.println("normal flow of the program's Instructions");
+		System.out.println("unCheckedExptest(-) method @End ....!  ");
 	}
 
 	/**
 	 * 
-	 * throws is used to throw an exception with in the method. throws is part
+	 * throw is used to throw an exception with in the method. throws is part
 	 * of method body. throws followed by one or more class names (if more,
 	 * separated by comma).
 	 * 
@@ -106,6 +108,7 @@ public class ExceptionDemo {
 		try {
 			if (age <= 0) {
 				// exp is always occurs
+				throw new Exception();
 			} else if (age > 18) {
 				MajorOrMinorExp exp = new MajorOrMinorExp("Person is major");
 				throw exp;
@@ -114,7 +117,7 @@ public class ExceptionDemo {
 				throw exp;
 			}
 		} catch (Exception ex) {
-			throw new MajorOrMinorExp("Number shold not be negative", ex);
+			throw new MajorOrMinorExp("Number shold not be negative or zero", ex);
 		}
 	}
 
@@ -155,6 +158,7 @@ public class ExceptionDemo {
 
 	public void chain(int a) {
 		try {
+			//if (a / 1 == 0) {
 			if (a / 0 == 0) {
 				System.out.println("no exceptoin");
 			}
