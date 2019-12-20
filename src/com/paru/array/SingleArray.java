@@ -92,10 +92,10 @@ public class SingleArray {
 		SingleArray singleArray = new SingleArray();
 		// singleArray.fill();
 		// singleArray.show();
-		// singleArray.dd_fill();
-		// singleArray.dd_show();
-		// singleArray.findingElementInDD(111);
-		singleArray.randomArr();
-		singleArray.sort();
+		singleArray.dd_fill();
+		singleArray.dd_show();
+		singleArray.findingElementInDD(15);
+		//singleArray.randomArr();
+		//singleArray.sort();
 	}
 }
