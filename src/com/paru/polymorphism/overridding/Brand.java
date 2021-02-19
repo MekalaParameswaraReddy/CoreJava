@@ -8,7 +8,7 @@ import java.util.Map;
 
 public class Brand {
 	public void getBrand() {
-		System.out.println("brands");
+		System.out.println("generic brands");
 	}
 
 	public void getBrandName(String name) {

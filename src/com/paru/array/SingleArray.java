@@ -87,15 +87,35 @@ public class SingleArray {
 		unSort[3] = 3;
 		unSort[4] = 2;
 	}
-
+	int[] min = new int[7];
+	public void fillMinArr() {
+		min[0] = 5;
+		min[1] = 2;
+		min[2] = 4;
+		min[3] = 6;
+		min[4] = 7;
+		min[5] = 9;
+		min[6] = 8;		
+	}
+	public void printmin() {
+		fillMinArr();
+		int frist = min[0];
+		int second = min[1];
+		for (int i = 0; i < min.length; ++i) {
+			//if(frist)
+			System.out.println(min[i]);
+		}
+		
+	}
 	public static void main(String[] args) {
 		SingleArray singleArray = new SingleArray();
-		// singleArray.fill();
+		 //singleArray.fill();
 		// singleArray.show();
 		singleArray.dd_fill();
 		singleArray.dd_show();
 		singleArray.findingElementInDD(15);
 		//singleArray.randomArr();
 		//singleArray.sort();
+		//singleArray.printmin();
 	}
 }

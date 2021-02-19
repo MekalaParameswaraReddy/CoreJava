@@ -64,5 +64,13 @@ public class Sony extends Brand {
 	}
 	public float getCount() {
 		return 5;
-	}	
+	}
+	
+	/**
+	 * While accessing the Sub clas own methods through super class 
+	 * reference will get compile time error 
+	 */
+	public void subclassOwnmethod() {
+		System.out.println("sub class own method ");
+	}
 }

@@ -13,6 +13,7 @@ public class OverRiddingTest {
 		Brand brand1 = new Sony();
 		brand1.getBrand();
 		System.out.println();
+		//brand1.subclassOwnmethod();  //The method subclassOwnmethod() is undefined for the type Brand
 		((Sony)brand1).getBrand();
 		// Sony sony1 = new Brand(); //Type mismatch: cannot convert from Brand to Sony
 		//Sony sony1 = (Sony)new Brand(); //ClassCastException:

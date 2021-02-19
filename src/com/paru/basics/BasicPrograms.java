@@ -287,7 +287,7 @@ public class BasicPrograms {
 
 	public void highSeqCount() {
 		Hashtable<Integer, Character> ht = new Hashtable<Integer, Character>();
-		String number = "33333333333333332211533333333333333377996666666666";
+		String number = "33333333333333332211533333333333333377996666666666999";
 		for (int i = 0; i < number.length(); ++i) {
 			int count = 1;
 			for (int j = i + 1; j < number.length(); ++j) {
@@ -344,7 +344,7 @@ public class BasicPrograms {
 	public static void main(String[] args) {
 		BasicPrograms basicPrograms = new BasicPrograms();
 		 //basicPrograms.getBackTriangleStar(4);// not completed
-		// basicPrograms.getTriangleStar(4);
+		 basicPrograms.getTriangleStar(4);
 		// basicPrograms.polyndrom_1(131);
 		// basicPrograms.polyndrom_2(131);
 		// basicPrograms.getFobinaci(123);
@@ -358,11 +358,11 @@ public class BasicPrograms {
 		//basicPrograms.swapWithOutTemp();
 		//basicPrograms.swapWithTemp();
 		//basicPrograms.isAmstrong(371);
-		//basicPrograms.isAmstrongDynamic(1634);
+		basicPrograms.isAmstrongDynamic(1634);
 		//basicPrograms.isDigit();
-		//basicPrograms.printNumbersFormString("a1b2c3d4");
-		//basicPrograms.getUniqueChar("ABC", "BC");
-		//basicPrograms.getUniqueChar("BENGALORE", "BA");
-		 basicPrograms.highSeqCount();
+		basicPrograms.printNumbersFormString("a1b2c3d4");
+		basicPrograms.getUniqueChar("ABC", "BC");
+		basicPrograms.getUniqueChar("BENGALORE", "BA");
+		// basicPrograms.highSeqCount();
 	}
 }
