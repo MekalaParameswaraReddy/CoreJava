@@ -12,10 +12,15 @@ import java.io.Serializable;
 public class Student implements Serializable {
 
 	private static final long serialVersionUID = 10L;
+	
 	private String name;
+	
 	private String address;
+	
 	private transient String pwd;
+	
 	int id;
+	
 	static String company = "SSS IT Pvt Ltd";// it won't be serialized
 
 	public Student(int id, String name, String address, String pwd) {

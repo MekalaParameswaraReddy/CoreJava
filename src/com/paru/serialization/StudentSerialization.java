@@ -20,7 +20,7 @@ import java.io.ObjectOutputStream;
 
 public class StudentSerialization  {
 	
-	String filePath = "D:\\Practice_Workspace\\CoreJava\\src\\com\\paru\\serialization\\student.txt";
+	String filePath = "D:\\Learnings\\Practice_Workspace_Java_1\\Core\\src\\com\\paru\\serialization\\student.txt";
 
 	public void persist(Student serObj) {
 		FileOutputStream fos = null;
