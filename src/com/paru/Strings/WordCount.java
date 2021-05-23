@@ -1,9 +1,12 @@
 package com.paru.Strings;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.concurrent.ConcurrentSkipListSet;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class WordCount {
 
@@ -107,6 +110,77 @@ public class WordCount {
 			}
 		}
 	}
+	public boolean A(){
+		return false;
+	}
+	public boolean B(){
+		return true;
+	}
+	public boolean C(){
+		return true;
+	}
+	public boolean getBoolean() {
+		return A()|B()|C();
+	}
+	public static final String ALPHA_NUMERIC_SPECIAL = "[A-Za-z_0-9'. ]*";
+	public static boolean validateAlphaNumericSpChar(String expression)
+    {
+        Pattern p = Pattern.compile(ALPHA_NUMERIC_SPECIAL);
+        Matcher m = p.matcher(expression);
+        return m.matches();
+    }
+
+	public void isDigit() {
+		ArrayList<Character> al = new ArrayList<Character>();
+		al.add('1');
+		al.add('a');
+		al.add('3');
+		al.add('b');
+		al.add('4');
+		al.add('c');
+		for (int i = 0; i < al.size(); ++i) {
+			Character ch = al.get(i);
+			if (ch.isDigit(ch)) {
+				System.out.println(ch);
+			}
+		}
+	}
+	
+	public void printNumbersFormString(String sentense) {
+		int size = sentense.length();
+		String chars = "";
+		String numbers = "";
+		Character ch[] = new Character[size];
+		for (int i = 0; i < size; ++i) {
+			ch[i] = sentense.charAt(i);
+			if (ch[i].isDigit(ch[i])) {
+				numbers = numbers + ch[i];
+			} else {
+				chars = chars + ch[i];
+			}
+		}
+		System.out.println("number are ==" + numbers);
+		System.out.println("chars are ===" + chars);
+	}
+	
+	public void getUniqueChar(String str1, String str2) {
+		// System.out.println(System.getProperty("user.dir"));
+		String result = "";
+		for (int i = 0; i < str1.length(); ++i) {
+			boolean flag = true;
+			for (int j = 0; j < str2.length(); ++j) {
+				if (str1.charAt(i) == str2.charAt(j)) {
+					flag = false;
+					break;
+				}
+			}
+			if (flag) {
+				result = result + str1.charAt(i);
+			}
+		}
+		System.out.println(result);
+	}
+
 	/**
 	 * @param args
 	 */
@@ -119,7 +193,13 @@ public class WordCount {
 		System.out.println("The word " + word + " is presnt " + count + " times");
 		wordCount.getWordCount();
 		wordCount.getWordCountForPerformance();
-		wordCount.equalTest();	*/
-		wordCount.lessThanGivenNumberShouldNotContainPassedNumber(134, 3);
+		wordCount.equalTest();	
+		wordCount.lessThanGivenNumberShouldNotContainPassedNumber(1234, 3);
+		
+		Boolean b = wordCount.getBoolean();
+		System.out.println(b);*/
+		
+		Boolean b1 = validateAlphaNumericSpChar("tester     .");
+		System.out.println(b1);
 	}
 }

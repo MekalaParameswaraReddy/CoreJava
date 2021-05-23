@@ -137,10 +137,10 @@ public class StringRevers {
 		System.out.println(reverseStrig);
 		String sentence = "paramesh  mekala";
 		String newsentence = stringRevers.removeWhiteSpace(sentence);
-		System.out.println(newsentence);
+		System.out.println(newsentence);*/
 		String kname = stringRevers.revWithRecursive("kumar");
-		System.out.println(kname);*/
+		System.out.println(kname);
 
-		stringRevers.repeatedCharCount("BANANA");
+		stringRevers.repeatedCharCount("BANANANNN");
 	}
 }

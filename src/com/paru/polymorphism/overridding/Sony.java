@@ -63,7 +63,7 @@ public class Sony extends Brand {
 				+ ":: it's code is + " + code);
 	}
 	public float getCount() {
-		return 5;
+		return 6;
 	}
 	
 	/**

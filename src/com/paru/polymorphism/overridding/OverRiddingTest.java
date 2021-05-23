@@ -19,6 +19,8 @@ public class OverRiddingTest {
 		//Sony sony1 = (Sony)new Brand(); //ClassCastException:
 		//System.out.println(sony1);
 		Brand brand2 = new Sony();
+		float f = brand2.getCount();
+		System.out.println(f);
 		brand2.getBrandName("Sony");
 		Brand brand3 = new Sony();
 		List<String> al = brand3.getBrandList("Sony");
